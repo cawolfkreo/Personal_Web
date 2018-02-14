@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Camilo Zambrano: Los metas de "author", "description" y "keywords" ayudan a que tu pagina 
+    pueda ser procesada lo mejor posible por servicios como Google. -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    
+    <!--Camilo Zambrano: Como sugerencia, trata de poner un favicon tambien en la pestaña de tu página-->
     <title>Camilo A Carrillo N</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <!--Camilo Zambrano: Otra sugerencia, trata de separar las fuentes del grupo de CSS para facilitar la lectura del HTML-->
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel="stylesheet" href="./css/MyCss.css" type="text/css">
 </head>
@@ -17,6 +25,7 @@
 <body>
     <!-- Header -->
     <div id="Home" class="header panel-active">
+        <!--Camilo Zambrano: No dejes los alt vacios. Si los vas a poner usalos lo mejor posible-->
         <img src="./img/logo2.png" alt="">
         <h1 id="title-main" class="txt-header">Welcome</h1>
     </div>
@@ -26,6 +35,9 @@
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark padding-sided dark">
         
 
+        <!--Camilo Zambrano: te recomiendo que tu alt sea un poco más descriptivo y que evites el uso de 
+        style en html. Es preferible crear una clase llamada "right", ponersela al class de tu imágen y
+        luego modificar el margen de este en el CSS-->
         <img src="./img/logo.png" width="32" height="32" class="img-logo d-inline-block text-center" alt="Logo" style="margin-right: 16px;">
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -84,6 +96,8 @@
                 <div class="col-md-7">
                     <h2 id="txt-portfolio2-title" class="txt-theme-title">Spherical pathfinding for Unity</h2>
                     <p id="txt-portfolio2-content" class="txt-basic">Spherical pathfinding algorithm for Unity with support for multiple seekers, soon on u-nity assets store.</p>
+                    <!-- Camilo Zambrano: Los h vacios pueden dar problemas de validación. Trata de poner mejor un div 
+                    y a ese si agregarle el h6 y su contenido con JQuery-->
                     <h6 id="txt-portfolio2-comment" class="txt-basic-green-bold"></h6>
                 </div>
             </div>
