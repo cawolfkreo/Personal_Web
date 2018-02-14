@@ -1,0 +1,41 @@
+{
+        "es":{
+            "title_main": "Bienvenido",
+            "Home" : "Inicio",
+            "About" : "Sobre mi",
+            "Portfolio" : "Portafolio",
+            "Contact": "Contacto",
+            "title_about": "Sobre mi...",
+            "title_tech": "Tecnologias",
+            "title_comfort": "Comodo usando",
+            "title_experience": "tengo experiencia con",
+            "Resume": "¡Hola!, soy Camilo, soy estudiante de Ingeniería de Sistemas en la Universidad de Los Andes.</br></br>Me apasionan el desarrollo de videojuegos y el diseño gráfico, me encanta escribir Scripts graficos, desarrollar algoritmos basados en fisica para video juegos y diseñar todo tipo de modelos 3D.</br></br>También soy fanático de la música, amante del Rock (lml), entusiasta de los videojuegos competitivos y un soñador a tiempo completo.",
+            "Portfolio1_title": "Shader de cesped",
+            "Portfolio2_title": "Pathfinding en superficies esfericas para Unity",
+            "Portfolio1_content": "3D Shader de cesped, basado en arquitectura DirectX.",
+            "Portfolio2_content": "Algortimo de Pathfinding para superficies esfericas con soporte para multiples buscadores",
+            "Portfolio1_comment": "Pronto en la Assets Store de Unity.",
+            "Portfolio2_comment": "Pronto en la Assets Store de Unity.",
+            "IconAttribution": "Icono creado por <a href='https://www.flaticon.es/autores/pixel-perfect'>Pixel perfect</a> de <a href='https://www.flaticon.com'>www.flaticon.com</a>"
+        },
+        
+        "en":{
+            "title_main": "Welcome",    
+            "Home" : "Home",
+            "About" : "About me",
+            "Portfolio" : "Portfolio",
+            "Contact": "Contact",
+            "title_about": "About me...",
+            "title_tech": "Technologies",
+            "title_comfort": "Comfort with",
+            "title_experience": "Experience with",
+            "Resume": "Hello !, I'm Camilo, I'm a Systems Engineering student at the University of Los Andes.</br></br>I'm passionate about videogame development and graphic design, I love develop graphic Scripts, physics-based algorithms for video games and designing all kinds of 3D models.</br></br>I'm also a music fan, Rock lover (lml), a competitive video game enthusiast and a full-time dreamer.",
+            "Portfolio1_title": "Grass Shader",
+            "Portfolio2_title": "Spherical pathfinding for Unity",
+            "Portfolio1_content": "A grass Shader based on DirectX architecture.",
+            "Portfolio2_content": "Spherical pathfinding algorithm for Unity with support for multiple seekers.",
+            "Portfolio1_comment": "Soon on Unity Assets Store.",
+            "Portfolio2_comment": "Soon on Unity Assets Store.",
+            "IconAttribution": "Icon made by <a href='https://www.flaticon.es/autores/pixel-perfect'>Pixel perfect</a> from <a href='https://www.flaticon.com'>www.flaticon.com</a>"
+        }
+    }
