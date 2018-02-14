@@ -4,7 +4,9 @@ $(document).ready(function () {
     console.log("ONLOAD");
     setActive('home-link', true);
 });
-
+/*seria buena idea que variables globales como esta las crees justo 
+debajo del 'use strict'. De esta forma puedes facilitar la lectura de 
+tu JS y sepas el Scope de tus variables*/
 var activeTabId = 'about-link';
 
 $('.btn').click(function () {
@@ -17,6 +19,8 @@ function setActive(newActiveId, move) {
         activeTabId = newActiveId;
     }
 
+    /* Similar al comentario anterior podrías iniciar estas variables justo debajo de
+    del "function ...(){" para saber bien el Scope que tienen*/
     var active = document.querySelector(".active");
     active.classList.remove("active");
 
@@ -29,12 +33,18 @@ function setActive(newActiveId, move) {
     console.log("Last Active: " + active.id + "\nPressed:" + newActiveId);
 
     var aTab = "";
-
+    
+    /*
+    Para facilitar ver tu código, te recomiendo realices comentarios que expliquen un poco
+    las cosas que haces en estructuras como las de abajo. En este caso no es tan complicado
+    darse cuenta que estas activando los páneles conforme el usuario usa tu navbar, pero no
+    esta demás comentar sobre esto.
+    */
     if (newActiveId == "home-link") {
         $("#Home").toggleClass("panel-active");
         aTab = "Home";
     } else if (newActiveId == "portfolio-link") {
-        $("#Portfolio").toggleClass("panel-active");
+        $("#Portfolio").toggleClass("panel-active"); 
         aTab = "Portfolio";
     } else if (newActiveId == "about-link") {
         $("#About").toggleClass("panel-active");
@@ -55,7 +65,7 @@ function callback(data) {
     updateLanguage(data, "EN");
 
     $('.btnLang').click(function () {
-        var active = document.querySelector(".langActive");
+        var active = document.querySelector(".langActive"); //esta es la forma en que es mejor, bien hecho :D
         active.classList.remove("langActive");
 
         $(this).toggleClass("langActive")
@@ -65,8 +75,14 @@ function callback(data) {
 }
 
 function updateLanguage(data, langId) {
+    /*
+    "var actIdioma" o "var actIdioma = data.es;"
+    */
     console.log("New Language: " + langId);
-
+    /*
+    si arriba tomas la primera opcion entonces aca pondrías:
+    actIdioma = data.es;
+    */
     var actIdioma = data.es;
 
     if (langId == "EN") {
@@ -74,6 +90,10 @@ function updateLanguage(data, langId) {
         actIdioma = data.en;
     }
 
+    /*
+    de nuevo, no es dificil darse cuenta de que haces, pero es mejor si explicas
+    que es lo que ocurre acá.
+    */
     document.getElementById("title-main").innerText = actIdioma.title_main;
     document.getElementById("txt-home").innerText = actIdioma.Home;
     document.getElementById("txt-about").innerHTML = actIdioma.About;
@@ -95,7 +115,15 @@ function updateLanguage(data, langId) {
 $.getJSON("./data/lenguaje.json", callback);
 
 window.onscroll = function () { myFunction() };
-
+/*
+si quieres puedes poner:
+"var navbar = document.getElementById("navbar"),sticky = navbar.offsetTop;"
+o
+"var navbar,sticky;
+navbar = document.getElementById("navbar");
+sticky = navbar.offsetTop;"
+para mejorar la lectura de tu codigo, pero esta bien como lo tienes
+*/
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
