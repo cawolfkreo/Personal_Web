@@ -180,3 +180,7 @@ h1,h2,h3,h4,h5,h6,a,p{
 	padding-top: 0;
 	padding-bottom: 0;
 }
+/*
+Camilo Zambrano: No tienes un mal Css, no tengo mucho que decir. pero te recomiendo tambien usar unidades como vw y vh para 
+que tu pagina escale mejor en dispositivos de pantallas más pequeñas como celulares o tablets.
+*/
